@@ -19,27 +19,27 @@ export default function Navbar() {
                 <BsChevronDown />
             </div>
             <div className='item'>
-                <Link to="/products/1">Women</Link>
+                <Link to="/products/1" className="link" >Women</Link>
             </div>
             <div className='item'>
-                <Link to="/products/2">Men</Link>
+                <Link to="/products/2" className="link" >Men</Link>
             </div>
             <div className='item'>
-                <Link to="/products/3">Kids</Link>
+                <Link to="/products/3" className="link" >Kids</Link>
             </div>
         </div>
         <div className='center'>
-            <Link to="/"><img src={logo} alt=''/></Link>
+            <Link to="/"><img src={logo} alt='' className="link" /></Link>
         </div>
         <div className='right'>
             <div className='center'>
-                <Link to="/">About</Link>
+                <Link to="/" className="link" >About</Link>
             </div>
             <div className='center'>
-                <Link to="/">Contact</Link>
+                <Link to="/" className="link" >Contact</Link>
             </div>
             <div className='center'>
-                <Link to="/">Stores</Link>
+                <Link to="/" className="link" >Stores</Link>
             </div>
             <div className='icons'>
                <BsSearch/>
