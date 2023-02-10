@@ -9,14 +9,30 @@
         height: auto;
         position: relative;
 
-        .direct{
-            color: black;
+        
+
+        .arrow{
+            color: #6B728E;
             font-size: 96px;
             z-index: 10;
-        }
+            position: absolute;
 
+            
+        }
+        .arrow.left{
+            top: 50%;
+            left: 10px;
+            cursor: pointer;
+            opacity: 40%;
+        }
+            .arrow.right{
+                top: 50%;
+                right: 10px;
+                cursor: pointer;
+                opacity: 40%;
+            }
         .sliderItems{
-            max-width: 100%;
+            width: 100vw;
             height: auto;
             display: flex;
 
