@@ -1,0 +1,36 @@
+.slider{
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    
+
+    .container{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+
+        .direct{
+            color: black;
+            font-size: 96px;
+            z-index: 10;
+        }
+
+        .sliderItems{
+            max-width: 100%;
+            height: auto;
+            display: flex;
+
+            .sliderItem{
+                max-width: 100%;
+                height: auto;
+
+                img{
+                    width: 100vw;
+                    height: 39vw;
+                    
+                    object-fit: cover;
+                  }
+            }
+        }
+    }
+}

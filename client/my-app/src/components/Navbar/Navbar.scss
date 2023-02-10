@@ -1,13 +1,19 @@
 .navbar{
-    height: 100px;
+    height: 120px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #2c2c2c;
+    color: #50577A;
+    background-color: #fcfcfc;
+    position: sticky;
+        top: 0;
+        z-index: 99;
+    
     .container{
         padding: 12px 36px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         
         
 
