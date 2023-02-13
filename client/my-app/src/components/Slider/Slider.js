@@ -6,20 +6,25 @@ import shopping3 from "../../assets/shopping3.png";
 import shopping4 from "../../assets/shopping4.png";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
+
+
 export default function Slider() {
-  
-    const [slideNumb,setSlideNumb] = useState(0)
-    const [trasnlateX,setTranslateX]=useState(0)
-  
-    const handleSlide = (direction) =>{
-      if( direction ==="left" && slideNumb>0){
-        setSlideNumb(slideNumb-1)
-      } if(direction==="right" && slideNumb<3){
-        setSlideNumb(slideNumb+1)
+  const [slide,setSlide] = useState(0);
+  const [translateX,setTranslateX]=useState(0);
+  const handleSlide = (direction) =>{
+    
+      if(direction==="left"&&slide>0){
+        setSlide(slide-1)
       }
-    }
+      if(direction==="right"&& slide<3){
+        setSlide(slide+1)
+      }
+
+    
+  }
+
+  useEffect(()=>{setTranslateX(slide*100)},[slide])
   
-    useEffect(()=>{setTranslateX(100*slideNumb)},[slideNumb])
   return (
     <div className="slider">
       <div className="container">
@@ -29,16 +34,16 @@ export default function Slider() {
         />
         <div
           className="sliderItems"
-          style={{transform:`translateX(-${trasnlateX}vw)`}}
+          style={{transform:`translateX(-${translateX}vw)`}}
         >
-          <div className="sliderItem">
-            <img src={shopping3} alt="" />
-          </div>
           <div className="sliderItem">
             <img src={shopping1} alt="" />
           </div>
           <div className="sliderItem">
             <img src={shopping2} alt="" />
+          </div>
+          <div className="sliderItem">
+            <img src={shopping3} alt="" />
           </div>
           <div className="sliderItem">
             <img src={shopping4} alt="" />

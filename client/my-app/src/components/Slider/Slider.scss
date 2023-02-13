@@ -12,10 +12,11 @@
         
 
         .arrow{
-            color: #6B728E;
-            font-size: 96px;
+            color: #babcc5;
+            font-size: 160px;
             z-index: 10;
             position: absolute;
+            
 
             
         }
@@ -39,12 +40,14 @@
             .sliderItem{
                 max-width: 100%;
                 height: auto;
+                
 
                 img{
                     width: 100vw;
-                    height: 39vw;
-                    
-                    object-fit: cover;
+                    height: 35vw;
+                    margin-top: 3rem;
+                   
+                    object-fit: contain;
                   }
             }
         }
