@@ -13,64 +13,59 @@ export default function Categories() {
   return (
     <div className='categories'>
         <div className='col'>
+            
             <div className='row'>
+          
                 <img src={cat1} alt=""/>
-                <div>
+                <div className='catlayout'>
                     <button>
                         <Link className='link' to="/products/1">Sale</Link>
                     </button>
                 </div>
             </div>
             <div className='row' style={{height:"215px"}}>
+            
             <img src={cat2} alt=""/>
-                <div>
+                <div className='catlayout'>
                     <button>
-                        <Link className='link' to="/products/2">Sale</Link>
+                        <Link className='link' to="/products/2">Women</Link>
                     </button>
                 </div>
             </div>
         </div>
         <div className='col'>
             <div className='row'>
+           
             <img src={cat3} alt=""/>
-                <div>
+                <div className='catlayout'>
                     <button>
-                        <Link className='link' to="/products/3">Sale</Link>
+                        <Link className='link' to="/products/3">New Season</Link>
                     </button>
                 </div>
             </div>
         </div>
         <div className='col col-l'>
-            <div className='row'>
-                <div className='col'>
-                  
-                <div  style={{marginRight:"10px"}}>
-                    <img src={cat4} alt=""/>
-                <div>
-                    <button>
-                        <Link className='link' to="/products/4">SALE</Link>
-                    </button>
-                </div>
-                </div>
-                </div>
-                <div className='col'>
-                <div style={{width:"400px", height:"200px"}}>
-                    <img src={cat5} alt=""/>
-                <div>
-                    <button>
-                        <Link className='link' to="/products/5">Sale</Link>
-                    </button>
-                </div>
-                </div>
-                </div>
+        <div className='col' >
+           
+           <div className='row'>
+           
+           <img src={cat5} style={{height:"215px"}} alt=""/>
+       <div className='catlayout'>
+           <button >
+               <Link className='link' to="/products/4">Men</Link>
+           </button>
+       </div>
+           </div>
+       </div>
                 
-            </div>
             <div className='col' >
-                    <div className='row'style={{marginTop:"20px"}}>
+           
+                    <div className='row'>
+                    
                     <img src={cat6} alt=""/>
-                <div>
-                    <button>
-                        <Link className='link' to="/products/6">Sale</Link>
+                <div className='catlayout'>
+                    <button >
+                        <Link className='link' to="/products/5">Shoes</Link>
                     </button>
                 </div>
                     </div>
