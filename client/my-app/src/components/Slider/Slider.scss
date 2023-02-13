@@ -12,8 +12,8 @@
         
 
         .arrow{
-            color: #babcc5;
-            font-size: 160px;
+            color: #6B728E;
+            font-size: 60px;
             z-index: 10;
             position: absolute;
             
@@ -36,6 +36,7 @@
             width: 100vw;
             height: auto;
             display: flex;
+            transition: all 1s ease;
 
             .sliderItem{
                 max-width: 100%;
@@ -45,8 +46,7 @@
                 img{
                     width: 100vw;
                     height: 35vw;
-                    margin-top: 3rem;
-                   
+                    margin-top: 2rem;
                     object-fit: contain;
                   }
             }
