@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Categories.scss"
-import cat1 from "../../assets/category1.png"
-import cat2 from "../../assets/category2.png"
-import cat3 from "../../assets/category3.png"
-import cat4 from "../../assets/category4.png"
-import cat5 from "../../assets/category5.png"
+import cat1 from "../../assets/category1.jpg"
+import cat2 from "../../assets/category2.jpg"
+import cat3 from "../../assets/category3.jpg"
+import cat4 from "../../assets/category4.jpg"
+import cat5 from "../../assets/category5.jpg"
 import cat6 from "../../assets/category6.png"
 import {Link} from "react-router-dom"
 
@@ -16,7 +16,7 @@ export default function Categories() {
             
             <div className='row'>
           
-                <img src={cat1} alt=""/>
+                <img src={cat1} style={{maxWidth:"400px"}} alt=""/>
                 <div className='catlayout'>
                     <button>
                         <Link className='link' to="/products/1">Sale</Link>
@@ -36,7 +36,7 @@ export default function Categories() {
         <div className='col'>
             <div className='row'>
            
-            <img src={cat3} alt=""/>
+            <img src={cat3} style={{maxWidth:"350px"}} alt=""/>
                 <div className='catlayout'>
                     <button>
                         <Link className='link' to="/products/3">New Season</Link>
@@ -46,23 +46,32 @@ export default function Categories() {
         </div>
         <div className='col col-l'>
         <div className='col' >
-           
            <div className='row'>
            
-           <img src={cat5} style={{height:"215px"}} alt=""/>
+           <img src={cat5} style={{height:"270px", maxWidth:"340px"}} alt=""/>
        <div className='catlayout'>
            <button >
                <Link className='link' to="/products/4">Men</Link>
            </button>
        </div>
            </div>
+           <div className='row'>
+           
+           <img src={cat4} style={{height:"270px", maxWidth:"340px"}} alt=""/>
+       <div className='catlayout'>
+           <button >
+               <Link className='link' to="/products/4">Sport</Link>
+           </button>
        </div>
+           </div>
+       </div>
+       
                 
             <div className='col' >
            
                     <div className='row'>
                     
-                    <img src={cat6} alt=""/>
+                    <img style={{maxWidth:"700px", height:"205px"}} src={cat6} alt=""/>
                 <div className='catlayout'>
                     <button >
                         <Link className='link' to="/products/5">Shoes</Link>

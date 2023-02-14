@@ -37,10 +37,10 @@ export default function Slider() {
           style={{transform:`translateX(-${translateX}vw)`}}
         >
           <div className="sliderItem">
-            <img src={shopping1} alt="" />
+            <img src={shopping2} alt="" />
           </div>
           <div className="sliderItem">
-            <img src={shopping2} alt="" />
+            <img src={shopping1} alt="" />
           </div>
           <div className="sliderItem">
             <img src={shopping3} alt="" />
