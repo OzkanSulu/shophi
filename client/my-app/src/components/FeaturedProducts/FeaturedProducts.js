@@ -1,42 +1,50 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./FeaturedPRoducts.scss";
+import black1 from "../../assets/black1.jpg"
+import black2 from "../../assets/black2.jpg"
+import pro1 from "../../assets/pro1.jpg"
+import pro2 from "../../assets/pro2.jpg"
+import blonde1 from "../../assets/blonde1.jpg"
+import blonde2 from "../../assets/blonde2.jpg"
+import shirt1 from "../../assets/shirt1.jpg"
+import shirt2 from "../../assets/shirt2.jpg"
 
-export default function FeaturedProducts({ type }) {
+export default function FeaturedProducts({ type, content }) {
   const data = [
     {
       id: 1,
-      img: "img1",
-      img2: "img12",
-      title: "title1",
-      isNew: true,
+      img: pro1,
+      img2: pro2,
+      title: "Men's Quarter-Zip Polar",
+      desc:"Zip polar black fleece jacket",
       oldPrice: 19,
-      price: 12,
+      price: 13,
     },
     {
       id: 2,
-      img: "img2",
-      img2: "img22",
-      title: "title2",
-      isNew: true,
+      img: black1,
+      img2: black2,
+      title: "Women's Cot T-shirt",
+      desc:"Full cotton black fleece t-shirt",
       oldPrice: 19,
       price: 12,
     },
     {
       id: 3,
-      img: "img3",
-      img2: "img32",
-      title: "title3",
-      isNew: true,
+      img: blonde1,
+      img2: blonde2,
+      title: "SumMMR feelSummer",
+      desc:"Silk precious summer woman shirt",
       oldPrice: 19,
       price: 12,
     },
     {
       id: 4,
-      img: "img4",
-      img2: "img42",
-      title: "title4",
-      isNew: true,
+      img: shirt1,
+      img2: shirt2,
+      title: "WHTY Shirt Womn",
+      desc:"Full cotton woman cool shirt",
       oldPrice: 19,
       price: 12,
     },
@@ -46,15 +54,7 @@ export default function FeaturedProducts({ type }) {
       <div className="top">
         <h1>{type} products</h1>
         <div><p>
-          You will find featured products on our website that offer the best
-          combination of quality and value. These products are carefully
-          selected based on their popularity, customer reviews, and overall
-          value. Whether you're looking for stylish clothing, comfortable
-          footwear, or must-have accessories, you'll find it all here at
-          affordable prices. Our featured products are updated regularly to
-          ensure you always have access to the latest trends and top-selling
-          items. So, don't miss out on the chance to discover amazing deals and
-          unbeatable quality on our featured products page.
+          {content}
         </p></div>
       </div>
       <div className="bottom">
