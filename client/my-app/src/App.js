@@ -6,10 +6,12 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import "./App.scss"
+import ScrollToTop from "./ScrollToTop";
 
 const Layout = () => {
   return (
     <div className="App">
+      <ScrollToTop />
       <Navbar />
       <Outlet />
       <Footer />
@@ -35,6 +37,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
+    
       <RouterProvider router={router} />
     </div>
   );

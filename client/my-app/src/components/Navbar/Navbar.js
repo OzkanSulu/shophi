@@ -4,7 +4,7 @@ import {AiOutlineShoppingCart} from "react-icons/ai"
 import {Link} from "react-router-dom"
 import logo from "../../assets/logo.png"
 import "./Navbar.scss"
-import Cart from '../Cart/Cart'
+
 
 export default function Navbar() {
     const [open,setOpen] = useState(false)
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
         </div>
         </div>
-        {open && <Cart/> }
+       
     </div>
   )
 }
